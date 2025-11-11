@@ -327,6 +327,8 @@
     const userInput = document.getElementById('userInput');
     const chatMessages = document.getElementById('chatMessages');
 
+    const endpoint = "https://innovventas.cognitiveservices.azure.com/language/:query-knowledgebases?projectName=InnovVentas-FAQ&api-version=2021-10-01&deploymentName=production";
+    const apiKey = "694Z9xV8GiuTlka7iuBDAquT00m93r7AyrbsbzAwfZuD9i0mchxiJQQJ99BKACHYHv6XJ3w3AAAaACOGoFV0";
 
     chatBtn.addEventListener('click', () => chatWidget.classList.toggle('open'));
     closeChat.addEventListener('click', () => chatWidget.classList.remove('open'));
