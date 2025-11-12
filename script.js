@@ -6,10 +6,11 @@ const userInput = document.getElementById('userInput');
 const chatMessages = document.getElementById('chatMessages');
 const themeToggle = document.getElementById('themeToggle');
 
-// ==================== CHATBOT ====================
-const endpoint = "https://innovventas.cognitiveservices.azure.com/language/:query-knowledgebases?projectName=InnovVentas-FAQ&api-version=2021-10-01&deploymentName=production";
-const apiKey = "694Z9xV8GiuTlka7iuBDAquT00m93r7AyrbsbzAwfZuD9i0mchxiJQQJ99BKACHYHv6XJ3w3AAAaACOGoFV0";
+// ==================== CONFIGURACIÓN AZURE ====================
+const endpoint = "https://chatbot-5.cognitiveservices.azure.com/language/:query-knowledgebases?projectName=escalante-mono&api-version=2021-10-01&deploymentName=production";
+const apiKey = "7o7VkYJCCdaHhmQZNFbbnDs7mxJxYpNTEfvB10mbFhyP0CSKNGQMJQQJ99BKACMsfrFXJ3w3AAAaACOGs9AB";
 
+// ==================== CHATBOT ====================
 chatBtn.addEventListener('click', () => chatWidget.classList.toggle('open'));
 closeChat.addEventListener('click', () => chatWidget.classList.remove('open'));
 sendBtn.addEventListener('click', sendMessage);
